@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 14 - http://www.wysiwygwebbuilder.com">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="dristikon_online_app.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.carousel.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   var Carousel1Opts =
+   {
+      delay: 3000,
+      duration: 500,
+      easing: 'linear',
+      mode: 'forward',
+      direction: '',
+      pagination: true,
+      pagination_img_default: 'images/page_default.png',
+      pagination_img_active: 'images/page_active.png',
+      start: 0
+   };
+   $("#Carousel1").carousel(Carousel1Opts);
+   $("#Carousel1_back a").click(function()
+   {
+      $('#Carousel1').carousel('prev');
+   });
+   $("#Carousel1_next a").click(function()
+   {
+      $('#Carousel1').carousel('next');
+   });
+   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'left', toggle: true});
+});
+</script>
+</head>
+<body>
+<div id="wb_Carousel1" style="position:absolute;left:0px;top:339px;width:970px;height:520px;z-index:0;overflow:hidden;">
+<div id="Carousel1" style="position:absolute;">
+<div class="frame">
+</div>
+<div class="frame">
+</div>
+<div class="frame">
+</div>
+<div class="frame">
+</div>
+<div class="frame">
+</div>
+</div>
+<div id="Carousel1_back"><a><img alt="Back" src="images/carousel_back.png"></a></div>
+<div id="Carousel1_next"><a><img alt="Next" src="images/carousel_next.png"></a></div>
+</div>
+<div id="wb_Image1" style="position:absolute;left:215px;top:1382px;width:606px;height:1280px;z-index:1;">
+<img src="images/IMG-20200621-WA0002.jpg" id="Image1" alt=""></div>
+<div id="wb_PanelMenu1" style="position:absolute;left:0px;top:264px;width:71px;height:73px;text-align:center;z-index:2;">
+<a href="#PanelMenu1_markup" id="PanelMenu1">&nbsp;</a>
+<div id="PanelMenu1_markup">
+<ul role="menu">
+   <li role="menuitem"><a href="">Home</a></li>
+   <li role="menuitem"><a href="">About Me</a></li>
+   <li role="menuitem"><a href="">Gallery</a></li>
+   <li role="menuitem"><a href="">Blog</a></li>
+   <li role="menuitem"><a href="">Links</a></li>
+</ul>
+</div>
+</div>
+<div id="wb_Image2" style="position:absolute;left:404px;top:70px;width:162px;height:141px;z-index:3;">
+<img src="images/logo dristikon app.png" id="Image2" alt=""></div>
+<div id="wb_CssMenu1" style="position:absolute;left:109px;top:272px;width:753px;height:58px;text-align:center;z-index:4;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="javascript:window.location.reload()" target="_self" title="Home">Home</a>
+</li>
+<li><a role="menuitem" href="https://kaustavroy-lab.github.io/dkonourstory/" target="_self" title="Our Story">Our&nbsp;Story</a>
+</li>
+<li><a role="menuitem" href="https://kaustavroy-lab.github.io/performersdkon/" target="_self" title="Performers">Performers</a>
+</li>
+<li><a role="menuitem" href="https://kaustavroy-lab.github.io/magazinedkon/" target="_self" title="Magazine">Magazine</a>
+</li>
+</ul>
+</div>
+</body>
+</html>
