@@ -95,7 +95,7 @@ body
    margin: 0;
    padding: 0;
 }
-#PanelMenu1_markup li a, #PanelMenu1_markup li a:hover
+#PanelMenu1_markup li a, #PanelMenu1_markup li a:hover, #PanelMenu1_markup li .active
 {
    padding: 10px 10px 10px 10px;
    border-width: 0;
@@ -117,7 +117,7 @@ body
    position: fixed;
    top: 0;
    height: 100%;
-   width: 250px;
+   width: 400px;
    z-index: 9999;
 }
 #wb_PanelMenu1 a, #PanelMenu1_markup li a
@@ -126,16 +126,16 @@ body
    border: 1px solid #2E2E2E;
    background-color: #0E171E;
    font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
+   font-weight: bold;
+   font-size: 43px;
    font-style: normal;
    text-decoration: none;
    -webkit-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
 }
-#wb_PanelMenu1 a:hover, #PanelMenu1_markup li a:hover
+#wb_PanelMenu1 a:hover, #PanelMenu1_markup li a:hover, #PanelMenu1_markup li .active
 {
-   color: #F7F7F7;
+   color: #FF0000;
    background-color: #0E171E;
    border: 1px solid #2E2E2E;
 }
@@ -212,8 +212,8 @@ body
 {
    float: left;
    margin: 0;
-   padding: 0px 25px 0px 0px;
-   width: 115px;
+   padding: 0px 0px 0px 0px;
+   width: 230px;
 }
 #wb_CssMenu1 a
 {
@@ -225,19 +225,19 @@ body
    background-image: none;
    font-family: Arial;
    font-weight: bold;
-   font-size: 20px;
+   font-size: 35px;
    font-style: normal;
    text-decoration: none;
-   width: 105px;
+   width: 220px;
    height: 36px;
    padding: 0px 5px 0px 5px;
    vertical-align: middle;
    line-height: 36px;
    text-align: center;
 }
-#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover
+#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover, #wb_CssMenu1 .active
 {
-   color: #FFFFFF;
+   color: #FF0000;
    background-color: transparent;
    background-image: none;
    border: 0px #2E6DA4 none;
@@ -256,4 +256,77 @@ body
    font-size: 1px;
    height: 0;
    line-height: 0;
+}
+#wb_CssMenu1.affix
+{
+   top: 0 !important;
+   position: fixed !important;
+}
+#wb_CssMenu2
+{
+   border: 0px #2E8B57 solid;
+   background-color: transparent;
+   margin: 0;
+}
+#wb_CssMenu2 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+}
+#wb_CssMenu2 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 0px 0px 0px;
+   width: 90px;
+}
+#wb_CssMenu2 a
+{
+   display: block;
+   float: left;
+   color: #FFFFFF;
+   border: 0px #CCCCCC none;
+   background-color: transparent;
+   background-image: none;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 53px;
+   font-style: normal;
+   text-decoration: none;
+   width: 80px;
+   height: 36px;
+   padding: 0px 5px 0px 5px;
+   vertical-align: middle;
+   line-height: 36px;
+   text-align: center;
+}
+#wb_CssMenu2 li:hover a, #wb_CssMenu2 a:hover, #wb_CssMenu2 .active
+{
+   color: #FF0000;
+   background-color: transparent;
+   background-image: none;
+   border: 0px #2E6DA4 none;
+}
+#wb_CssMenu2 li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_CssMenu2 li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_CssMenu2 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#wb_CssMenu2.affix
+{
+   top: 0 !important;
+   position: fixed !important;
 }
