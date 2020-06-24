@@ -63,7 +63,6 @@ $(document).ready(function()
    };
    $("#Carousel1").carousel(Carousel1Opts);
    $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'left', toggle: true});
-   $("#wb_CssMenu2").affix({offset:{top: $("#wb_CssMenu2").offset().top}});
    var Carousel4Opts =
    {
       delay: 5000,
@@ -78,6 +77,7 @@ $(document).ready(function()
    };
    $("#Carousel4").carousel(Carousel4Opts);
    $("#wb_CssMenu1").affix({offset:{top: $("#wb_CssMenu1").offset().top}});
+   $("#wb_CssMenu2").affix({offset:{top: $("#wb_CssMenu2").offset().top}});
 });
 </script>
 </head>
@@ -194,13 +194,7 @@ $(document).ready(function()
 </div>
 <div id="wb_Image2" style="position:absolute;left:402px;top:59px;width:167px;height:167px;z-index:36;">
 <img src="images/circle dristikon water mark white 1.png" id="Image2" alt=""></div>
-<div id="wb_CssMenu2" style="position:absolute;left:0px;top:275px;width:90px;height:36px;text-align:center;z-index:37;">
-<ul role="menubar">
-<li class="firstmain"><a role="menuitem" href="javascript:window.location.reload()" target="_self" title="=" onclick="ShowPanel('PanelMenu1', event);return false;">=</a>
-</li>
-</ul>
-</div>
-<div id="wb_Carousel4" style="position:absolute;left:1px;top:1270px;width:969px;height:206px;visibility:hidden;z-index:38;overflow:hidden;">
+<div id="wb_Carousel4" style="position:absolute;left:1px;top:1270px;width:969px;height:206px;visibility:hidden;z-index:37;overflow:hidden;">
 <div id="Carousel4" style="position:absolute;">
 <div class="frame">
 <div id="wb_Image7" style="position:absolute;left:20px;top:21px;width:296px;height:164px;z-index:25;">
@@ -216,7 +210,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_CssMenu1" style="position:absolute;left:25px;top:273px;width:920px;height:58px;text-align:center;z-index:39;">
+<div id="wb_CssMenu1" style="position:absolute;left:85px;top:273px;width:800px;height:58px;text-align:center;z-index:38;">
 <ul role="menubar">
 <li class="firstmain"><a role="menuitem" href="javascript:window.location.reload()" target="_self" title="Home">Home</a>
 </li>
@@ -225,6 +219,12 @@ $(document).ready(function()
 <li><a role="menuitem" href="https://kaustavroy-lab.github.io/performersdkon/" target="_self" title="Performers">Performers</a>
 </li>
 <li><a role="menuitem" href="https://kaustavroy-lab.github.io/magazinedkon/" target="_self" title="Magazines">Magazines</a>
+</li>
+</ul>
+</div>
+<div id="wb_CssMenu2" style="position:absolute;left:0px;top:275px;width:90px;height:36px;text-align:center;z-index:39;">
+<ul role="menubar">
+<li class="firstmain"><a role="menuitem" href="javascript:window.location.reload()" target="_self" title="=" onclick="ShowPanel('PanelMenu1', event);return false;">=</a>
 </li>
 </ul>
 </div>
