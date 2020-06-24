@@ -568,7 +568,7 @@ body
    float: left;
    color: #FFFFFF;
    border: 0px #CCCCCC none;
-   background-color: #0E171E;
+   background-color: transparent;
    background-image: none;
    font-family: Arial;
    font-weight: bold;
@@ -585,7 +585,7 @@ body
 #wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover, #wb_CssMenu1 .active
 {
    color: #FF0000;
-   background-color: #337AB7;
+   background-color: transparent;
    background-image: none;
    border: 0px #2E6DA4 none;
 }
