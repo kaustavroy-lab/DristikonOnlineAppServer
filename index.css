@@ -182,8 +182,7 @@ body
 }
 #Image1
 {
-   border: 0px solid #000000;
-   padding: 0;
+   border-width: 0;
    margin: 0;
    left: 0;
    top: 0;
