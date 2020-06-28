@@ -9,6 +9,105 @@ body
    margin: 0;
    padding: 0;
 }
+#wb_Text6 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text6 div
+{
+   text-align: left;
+}
+#Image29
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text5 div
+{
+   text-align: left;
+   white-space: nowrap;
+}
+#wb_Carousel6
+{
+   background-color: transparent;
+   background-image: none;
+}
+#wb_Carousel6
+{
+   font-size: 0;
+}
+#Carousel6 .frame
+{
+   width: 969px;
+   display: inline-block;
+   overflow: hidden;
+   height: 206px;
+}
+#Carousel6 .innerframe
+{
+   display: inline-block;
+   height: 0;
+   left: 0;
+   margin-left: 0;
+   position: absolute;
+   top: 0;
+   width: 969px;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+   white-space: nowrap;
+}
+#wb_Carousel5
+{
+   background-color: transparent;
+   background-image: none;
+}
+#Carousel5 .frame
+{
+   width: 969px;
+   display: inline-block;
+   float: left;
+   height: 206px;
+}
 #wb_Carousel4
 {
    background-color: transparent;
@@ -34,18 +133,6 @@ body
    position: absolute;
    top: 0;
    width: 969px;
-}
-#wb_Carousel5
-{
-   background-color: transparent;
-   background-image: none;
-}
-#Carousel5 .frame
-{
-   width: 969px;
-   display: inline-block;
-   float: left;
-   height: 206px;
 }
 #wb_Carousel2
 {
@@ -85,20 +172,6 @@ body
 #wb_Text2 div
 {
    text-align: left;
-}
-#wb_Text3 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_Text3 div
-{
-   text-align: left;
-   white-space: nowrap;
 }
 #wb_Text1 
 {
@@ -180,15 +253,6 @@ body
    border-style: none;
    padding: 12px 12px 12px 12px;
 }
-#Image1
-{
-   border-width: 0;
-   margin: 0;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-}
 #wb_PanelMenu1 a, #PanelMenu1_markup li a
 {
    display: block;
@@ -232,9 +296,7 @@ body
    display: none;
    position: absolute;
    position: fixed;
-   top: 0;
-   height: 100%;
-   width: 400px;
+   width: 100%;
    z-index: 9999;
 }
 #wb_PanelMenu1 a, #PanelMenu1_markup li a
@@ -247,6 +309,7 @@ body
    font-size: 43px;
    font-style: normal;
    text-decoration: none;
+   box-shadow: 0px 0px 6px #000000;
    -webkit-transition: all 0.3s ease-in-out;
    transition: all 0.3s ease-in-out;
 }
@@ -740,46 +803,6 @@ body
    width: 100%;
    height: 100%;
 }
-#wb_Text5 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: left;
-}
-#wb_Text5 div
-{
-   text-align: left;
-   white-space: nowrap;
-}
-#wb_Carousel6
-{
-   background-color: transparent;
-   background-image: none;
-}
-#wb_Carousel6
-{
-   font-size: 0;
-}
-#Carousel6 .frame
-{
-   width: 969px;
-   display: inline-block;
-   overflow: hidden;
-   height: 206px;
-}
-#Carousel6 .innerframe
-{
-   display: inline-block;
-   height: 0;
-   left: 0;
-   margin-left: 0;
-   position: absolute;
-   top: 0;
-   width: 969px;
-}
 #Image28
 {
    border: 0px solid #000000;
@@ -800,6 +823,16 @@ body
    width: 100%;
    height: 100%;
 }
+#Image27
+{
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
 #Image23
 {
    border: 0px solid #000000;
@@ -810,6 +843,10 @@ body
    width: 100%;
    height: 100%;
 }
+#Shape1
+{
+   border-width: 0;
+}
 #wb_Text7 
 {
    background-color: transparent;
@@ -817,9 +854,9 @@ body
    border: 0px solid #000000;
    padding: 0;
    margin: 0;
-   text-align: left;
+   text-align: center;
 }
 #wb_Text7 div
 {
-   text-align: left;
+   text-align: center;
 }

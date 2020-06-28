@@ -8,14 +8,36 @@
 <link href="index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
 <script src="wb.carousel.min.js"></script>
-<script src="wb.lazyload.min.js"></script>
 <script src="wb.panel.min.js"></script>
-<script src="affix.min.js"></script>
 <script src="scrollspy.min.js"></script>
+<script src="affix.min.js"></script>
 <script src="wwb14.min.js"></script>
 <script>
 $(document).ready(function()
 {
+   var Carousel6Opts =
+   {
+      delay: 20000,
+      duration: 400,
+      easing: 'linear',
+      mode: 'forward-circular',
+      direction: '',
+      scalemode: 3,
+      pagination: false,
+      start: 0
+   };
+   $("#Carousel6").carousel(Carousel6Opts);
+   var Carousel5Opts =
+   {
+      delay: 8000,
+      duration: 400,
+      easing: 'linear',
+      mode: 'forward-circular',
+      direction: '',
+      pagination: false,
+      start: 0
+   };
+   $("#Carousel5").carousel(Carousel5Opts);
    var Carousel4Opts =
    {
       delay: 15000,
@@ -28,17 +50,6 @@ $(document).ready(function()
       start: 0
    };
    $("#Carousel4").carousel(Carousel4Opts);
-   var Carousel5Opts =
-   {
-      delay: 8000,
-      duration: 400,
-      easing: 'linear',
-      mode: 'forward-circular',
-      direction: '',
-      pagination: false,
-      start: 0
-   };
-   $("#Carousel5").carousel(Carousel5Opts);
    var Carousel2Opts =
    {
       delay: 7000,
@@ -77,41 +88,42 @@ $(document).ready(function()
       start: 0
    };
    $("#Carousel1").carousel(Carousel1Opts);
-   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'left', toggle: true});
+   $("#PanelMenu1").panel({animate: true, animationDuration: 150, animationEasing: 'linear', dismissible: true, display: 'overlay', position: 'top', toggle: true});
+   $("#PanelMenu1_markup ul li a").click(function(event)
+   {
+       $.panel.hide($("#PanelMenu1_panel"));
+   });
    $("#wb_CssMenu2").affix({offset:{top: $("#wb_CssMenu2").offset().top}});
    $("#wb_CssMenu1").affix({offset:{top: $("#wb_CssMenu1").offset().top}});
-   var Carousel6Opts =
-   {
-      delay: 20000,
-      duration: 400,
-      easing: 'linear',
-      mode: 'forward-circular',
-      direction: '',
-      scalemode: 3,
-      pagination: false,
-      start: 0
-   };
-   $("#Carousel6").carousel(Carousel6Opts);
-   $('img[data-src]').lazyload();
 });
 </script>
 </head>
 <body data-spy="scroll">
-<div id="wb_Carousel4" style="position:absolute;left:0px;top:1480px;width:969px;height:206px;z-index:31;overflow:hidden;">
-<div id="Carousel4" style="position:absolute;">
+<div id="wb_Text6" style="position:absolute;left:59px;top:1175px;width:468px;height:51px;z-index:31;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:43px;letter-spacing:1.07px;"><strong>In Your Language</strong></span></div>
+<div id="wb_Image29" style="position:absolute;left:337px;top:1234px;width:296px;height:164px;z-index:32;">
+<a href="https://www.youtube.com/playlist?list=PLbrjRQAzpHJAFSyzIfjOtbPS1L3pXGXCV"><img src="images/carosel~1.png" id="Image29" alt=""></a></div>
+<div id="wb_Image1" style="position:absolute;left:22px;top:1234px;width:294px;height:164px;z-index:33;">
+<a href="https://www.youtube.com/playlist?list=PLbrjRQAzpHJCKBgMhOlZDSBg1x1OqwMOe"><img src="images/bangla~1.png" id="Image1" alt=""></a></div>
+<div id="wb_Text5" style="position:absolute;left:59px;top:1944px;width:566px;height:64px;z-index:34;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>Interviews</strong></span></div>
+<div id="wb_Carousel6" style="position:absolute;left:0px;top:1979px;width:969px;height:206px;z-index:35;overflow:hidden;">
+<div id="Carousel6" style="position:absolute;">
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image18" style="position:absolute;left:20px;top:21px;width:296px;height:164px;z-index:0;">
-<a href="https://www.youtube.com/watch?v=CXb1d3kTdhA&feature=youtu.be"><img src="images/Aviman~1.png" id="Image18" alt=""></a></div>
-<div id="wb_Image9" style="position:absolute;left:336px;top:21px;width:297px;height:164px;z-index:1;">
-<a href="https://www.youtube.com/watch?v=zVZvPBIN3ng&feature=youtu.be"><img src="images/paribarik~1.png" id="Image9" alt=""></a></div>
-<div id="wb_Image17" style="position:absolute;left:656px;top:11px;width:296px;height:174px;z-index:2;">
-<a href="https://www.youtube.com/watch?v=rX2lkMBYO0k&feature=youtu.be"><img src="images/suvomita~1.png" id="Image17" alt=""></a></div>
+<div id="wb_Image28" style="position:absolute;left:22px;top:24px;width:294px;height:161px;z-index:0;">
+<a href="https://youtu.be/3GPcVVpxAjo"><img src="images/hriday~1.png" id="Image28" alt=""></a></div>
+<div id="wb_Image16" style="position:absolute;left:336px;top:24px;width:297px;height:161px;z-index:1;">
+<a href="https://youtu.be/cFbpNN59BEg"><img src="images/keats japon~1.png" id="Image16" alt=""></a></div>
+<div id="wb_Image23" style="position:absolute;left:656px;top:24px;width:296px;height:161px;z-index:2;">
+<a href="https://youtu.be/ETz5TNaeS78"><img src="images/sudhir gautam~1.png" id="Image23" alt=""></a></div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_Carousel5" style="position:absolute;left:0px;top:2009px;width:969px;height:206px;z-index:32;overflow:hidden;">
+<div id="wb_Text3" style="position:absolute;left:59px;top:2197px;width:639px;height:64px;z-index:36;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>Popular Bengali Songs</strong></span></div>
+<div id="wb_Carousel5" style="position:absolute;left:0px;top:2234px;width:969px;height:206px;z-index:37;overflow:hidden;">
 <div id="Carousel5" style="position:absolute;">
 <div class="frame">
 <div id="wb_Image32" style="position:absolute;left:25px;top:21px;width:291px;height:164px;z-index:3;">
@@ -131,105 +143,115 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Carousel2" style="position:absolute;left:0px;top:1221px;width:969px;height:206px;z-index:33;overflow:hidden;">
+<div id="wb_Carousel4" style="position:absolute;left:0px;top:1731px;width:969px;height:206px;z-index:38;overflow:hidden;">
+<div id="Carousel4" style="position:absolute;">
+<div class="frame">
+<div class="innerframe">
+<div id="wb_Image18" style="position:absolute;left:20px;top:21px;width:296px;height:164px;z-index:9;">
+<a href="https://www.youtube.com/watch?v=CXb1d3kTdhA&feature=youtu.be"><img src="images/Aviman~1.png" id="Image18" alt=""></a></div>
+<div id="wb_Image9" style="position:absolute;left:336px;top:21px;width:297px;height:164px;z-index:10;">
+<a href="https://www.youtube.com/watch?v=zVZvPBIN3ng&feature=youtu.be"><img src="images/paribarik~1.png" id="Image9" alt=""></a></div>
+<div id="wb_Image17" style="position:absolute;left:656px;top:11px;width:296px;height:174px;z-index:11;">
+<a href="https://www.youtube.com/watch?v=rX2lkMBYO0k&feature=youtu.be"><img src="images/suvomita~1.png" id="Image17" alt=""></a></div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Carousel2" style="position:absolute;left:0px;top:1463px;width:969px;height:206px;z-index:39;overflow:hidden;">
 <div id="Carousel2" style="position:absolute;">
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image5" style="position:absolute;left:20px;top:21px;width:296px;height:164px;z-index:9;">
+<div id="wb_Image5" style="position:absolute;left:20px;top:21px;width:296px;height:164px;z-index:12;">
 <a href="https://www.youtube.com/watch?v=Txbc9vXXqqE&feature=youtu.be"><img src="images/29  img~1.png" id="Image5" alt=""></a></div>
-<div id="wb_Image25" style="position:absolute;left:337px;top:21px;width:296px;height:164px;z-index:10;">
+<div id="wb_Image25" style="position:absolute;left:337px;top:21px;width:296px;height:164px;z-index:13;">
 <a href="https://www.youtube.com/watch?v=_KHWWImVc6U&feature=youtu.be"><img src="images/pepe seddo~1.png" id="Image25" alt=""></a></div>
-<div id="wb_Image24" style="position:absolute;left:656px;top:21px;width:296px;height:164px;z-index:11;">
+<div id="wb_Image24" style="position:absolute;left:656px;top:21px;width:296px;height:164px;z-index:14;">
 <a href="https://www.youtube.com/watch?v=_Jp96VRx9V0&feature=youtu.be"><img src="images/Somoy~1.png" id="Image24" alt=""></a></div>
 </div>
 </div>
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image26" style="position:absolute;left:1100px;top:21px;width:296px;height:164px;z-index:12;">
+<div id="wb_Image26" style="position:absolute;left:1100px;top:21px;width:296px;height:164px;z-index:15;">
 <a href="https://www.youtube.com/watch?v=X7vjmAWi55s&feature=youtu.be"><img src="images/dream~1.png" id="Image26" alt=""></a></div>
-<div id="wb_Image22" style="position:absolute;left:1509px;top:21px;width:296px;height:164px;z-index:13;">
+<div id="wb_Image22" style="position:absolute;left:1509px;top:21px;width:296px;height:164px;z-index:16;">
 <a href="https://www.youtube.com/watch?v=zuYg8pMVigQ&feature=youtu.be"><img src="images/mirror~1.png" id="Image22" alt=""></a></div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_Text2" style="position:absolute;left:60px;top:1179px;width:468px;height:51px;z-index:34;">
+<div id="wb_Text2" style="position:absolute;left:60px;top:1426px;width:468px;height:51px;z-index:40;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>Short films</strong></span></div>
-<div id="wb_Text3" style="position:absolute;left:59px;top:1968px;width:639px;height:64px;z-index:35;">
-<span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>Popular Bengali Songs</strong></span></div>
-<div id="wb_Text1" style="position:absolute;left:60px;top:912px;width:468px;height:51px;z-index:36;">
+<div id="wb_Text1" style="position:absolute;left:60px;top:912px;width:468px;height:51px;z-index:41;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;letter-spacing:1.07px;"><strong>Popular Videos</strong></span></div>
-<div id="wb_Carousel3" style="position:absolute;left:0px;top:963px;width:969px;height:206px;z-index:37;overflow:hidden;">
+<div id="wb_Carousel3" style="position:absolute;left:0px;top:950px;width:969px;height:206px;z-index:42;overflow:hidden;">
 <div id="Carousel3" style="position:absolute;">
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image10" style="position:absolute;left:656px;top:21px;width:296px;height:164px;z-index:14;">
+<div id="wb_Image10" style="position:absolute;left:656px;top:21px;width:296px;height:164px;z-index:17;">
 <a href="https://www.youtube.com/watch?v=_KHWWImVc6U&feature=youtu.be"><img src="images/pepe seddo~1.png" id="Image10" alt=""></a></div>
-<div id="wb_Image12" style="position:absolute;left:337px;top:21px;width:296px;height:164px;z-index:15;">
+<div id="wb_Image12" style="position:absolute;left:337px;top:21px;width:296px;height:164px;z-index:18;">
 <a href="https://www.youtube.com/watch?v=F88Wsz7UvIY&feature=youtu.be"><img src="images/english medium~1.png" id="Image12" alt=""></a></div>
-<div id="wb_Image11" style="position:absolute;left:20px;top:21px;width:296px;height:164px;z-index:16;">
+<div id="wb_Image11" style="position:absolute;left:20px;top:21px;width:296px;height:164px;z-index:19;">
 <a href="https://www.youtube.com/watch?v=zY32OxnOeu0&feature=youtu.be"><img src="images/prakton~1.png" id="Image11" alt=""></a></div>
 </div>
 </div>
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image14" style="position:absolute;left:994px;top:21px;width:296px;height:164px;z-index:17;">
+<div id="wb_Image14" style="position:absolute;left:994px;top:21px;width:296px;height:164px;z-index:20;">
 <a href="https://www.youtube.com/watch?v=-Hs3BT_AAMk&feature=youtu.be"><img src="images/Sapna Jahan~1.png" id="Image14" alt=""></a></div>
-<div id="wb_Image13" style="position:absolute;left:1314px;top:21px;width:296px;height:164px;z-index:18;">
+<div id="wb_Image13" style="position:absolute;left:1314px;top:21px;width:296px;height:164px;z-index:21;">
 <a href="https://www.youtube.com/watch?v=dDxNXsE2lds&feature=youtu.be"><img src="images/confusing chat~1.png" id="Image13" alt=""></a></div>
-<div id="wb_Image15" style="position:absolute;left:1625px;top:21px;width:296px;height:164px;z-index:19;">
+<div id="wb_Image15" style="position:absolute;left:1625px;top:21px;width:296px;height:164px;z-index:22;">
 <a href="https://www.youtube.com/watch?v=_Jp96VRx9V0&feature=youtu.be"><img src="images/Somoy~1.png" id="Image15" alt=""></a></div>
 </div>
 </div>
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image19" style="position:absolute;left:1960px;top:21px;width:296px;height:164px;z-index:20;">
+<div id="wb_Image19" style="position:absolute;left:1960px;top:21px;width:296px;height:164px;z-index:23;">
 <a href="https://www.youtube.com/watch?v=Txbc9vXXqqE&feature=youtu.be"><img src="images/29  img~1.png" id="Image19" alt=""></a></div>
-<div id="wb_Image20" style="position:absolute;left:2274px;top:21px;width:296px;height:164px;z-index:21;">
+<div id="wb_Image20" style="position:absolute;left:2278px;top:21px;width:296px;height:164px;z-index:24;">
 <a href="https://www.youtube.com/watch?v=CXb1d3kTdhA&feature=youtu.be"><img src="images/Aviman~1.png" id="Image20" alt=""></a></div>
-<div id="wb_Image21" style="position:absolute;left:2596px;top:21px;width:296px;height:164px;z-index:22;">
+<div id="wb_Image21" style="position:absolute;left:2596px;top:21px;width:296px;height:164px;z-index:25;">
 <a href="https://www.youtube.com/watch?v=Zb4V9-Z8JJ0&feature=youtu.be"><img src="images/Hume Tumse~1.png" id="Image21" alt=""></a></div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_Carousel1" style="position:absolute;left:0px;top:339px;width:970px;height:520px;z-index:38;overflow:hidden;">
+<div id="wb_Carousel1" style="position:absolute;left:0px;top:339px;width:970px;height:520px;z-index:43;overflow:hidden;">
 <div id="Carousel1" style="position:absolute;">
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image6" style="position:absolute;left:0px;top:0px;width:970px;height:520px;z-index:23;">
+<div id="wb_Image6" style="position:absolute;left:0px;top:0px;width:970px;height:520px;z-index:26;">
 <a href="https://www.youtube.com/watch?v=dDxNXsE2lds&feature=youtu.be"><img src="images/maxresdefault1-1280x720.jpg" id="Image6" alt=""></a></div>
 </div>
 </div>
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image3" style="position:absolute;left:970px;top:0px;width:970px;height:520px;z-index:24;">
+<div id="wb_Image3" style="position:absolute;left:970px;top:0px;width:970px;height:520px;z-index:27;">
 <a href="https://www.youtube.com/watch?v=Txbc9vXXqqE&feature=youtu.be"><img src="images/updated-thumbnail-1815x1021.jpg" id="Image3" alt=""></a></div>
 </div>
 </div>
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image4" style="position:absolute;left:1940px;top:0px;width:969px;height:520px;z-index:25;">
+<div id="wb_Image4" style="position:absolute;left:1940px;top:0px;width:969px;height:520px;z-index:28;">
 <a href="https://www.youtube.com/watch?v=X7vjmAWi55s&feature=youtu.be"><img src="images/thumbnail-1920x1080.jpg" id="Image4" alt=""></a></div>
 </div>
 </div>
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image7" style="position:absolute;left:2911px;top:0px;width:968px;height:520px;z-index:26;">
+<div id="wb_Image7" style="position:absolute;left:2911px;top:0px;width:968px;height:520px;z-index:29;">
 <a href="https://www.youtube.com/watch?v=_KHWWImVc6U&feature=youtu.be"><img src="images/video-thumbnail-1360x765.jpg" id="Image7" alt=""></a></div>
 </div>
 </div>
 <div class="frame">
 <div class="innerframe">
-<div id="wb_Image8" style="position:absolute;left:3880px;top:0px;width:970px;height:520px;z-index:27;">
+<div id="wb_Image8" style="position:absolute;left:3880px;top:0px;width:970px;height:520px;z-index:30;">
 <a href="https://www.youtube.com/watch?v=_Jp96VRx9V0&feature=youtu.be"><img src="images/thumb-part-2-1.5k-1920x1080.jpg" id="Image8" alt=""></a></div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_Image1" style="position:absolute;left:34px;top:2486px;width:664px;height:1311px;z-index:39;">
-<a href="https://www.youtube.com/watch?v=Po5zLWqp0ZY&t=370s&pbjreload=101"><img src="images/placeholder.gif" data-src="images/IMG-20200621-WA0002.png" id="Image1" alt="new" title="00."></a></div>
-<div id="wb_PanelMenu1" style="position:absolute;left:702px;top:167px;width:71px;height:73px;visibility:hidden;text-align:center;z-index:40;">
+<div id="wb_PanelMenu1" style="position:absolute;left:702px;top:167px;width:71px;height:73px;visibility:hidden;text-align:center;z-index:44;">
 <a href="#PanelMenu1_markup" id="PanelMenu1">&nbsp;</a>
 <div id="PanelMenu1_markup">
 <ul role="menu">
@@ -238,18 +260,20 @@ $(document).ready(function()
    <li role="menuitem"><a href="https://kaustavroy-lab.github.io/healthtipsdkon/" title="Health Tips"><i class="fa fa-quote-left fa-fw"></i><span>Health Tips</span></a></li>
    <li role="menuitem"><a href="https://kaustavroy-lab.github.io/developerstudiodkon/" title="Developer Studio"><i class="fa fa-code fa-fw"></i><span>Developer Studio</span></a></li>
    <li role="menuitem"><a href="http://www.jobless-engineer.blogspot.com/" title="Jobless Engineer"><i class="fa fa-id-badge fa-fw"></i><span>Jobless Engineer</span></a></li>
+   <li role="menuitem"><a href="https://www.mygov.in/covid-19/"><i class="fa fa-info-circle fa-fw"></i><span>COVID-19</span></a></li>
+   <li role="menuitem"><a href="https://www.windy.com/?22.566,88.365,5"><i class="fa fa-sun-o fa-fw"></i><span>Weather Update</span></a></li>
 </ul>
 </div>
 </div>
-<div id="wb_Image2" style="position:absolute;left:402px;top:59px;width:167px;height:167px;z-index:41;">
+<div id="wb_Image2" style="position:absolute;left:402px;top:59px;width:167px;height:167px;z-index:45;">
 <img src="images/circle dristikon water mark white 1.png" id="Image2" alt=""></div>
-<div id="wb_CssMenu2" style="position:absolute;left:0px;top:275px;width:101px;height:36px;text-align:center;z-index:42;">
+<div id="wb_CssMenu2" style="position:absolute;left:0px;top:275px;width:101px;height:36px;text-align:center;z-index:46;">
 <ul role="menubar">
 <li class="firstmain"><a role="menuitem" href="javascript:window.location.reload()" target="_self" title="=" onclick="ShowPanel('PanelMenu1', event);return false;">=</a>
 </li>
 </ul>
 </div>
-<div id="wb_CssMenu1" style="position:absolute;left:101px;top:275px;width:860px;height:58px;text-align:center;z-index:43;">
+<div id="wb_CssMenu1" style="position:absolute;left:101px;top:275px;width:860px;height:58px;text-align:center;z-index:47;">
 <ul role="menubar">
 <li class="firstmain"><a role="menuitem" href="javascript:window.location.reload()" target="_self" title="Home">Home</a>
 </li>
@@ -261,25 +285,13 @@ $(document).ready(function()
 </li>
 </ul>
 </div>
-<div id="wb_Text4" style="position:absolute;left:60px;top:1440px;width:566px;height:51px;z-index:44;">
+<div id="wb_Text4" style="position:absolute;left:60px;top:1688px;width:566px;height:51px;z-index:48;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>Audio-Drama/ Story Plays</strong></span></div>
-<div id="wb_Text5" style="position:absolute;left:60px;top:1700px;width:566px;height:64px;z-index:45;">
-<span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>Interviews</strong></span></div>
-<div id="wb_Carousel6" style="position:absolute;left:0px;top:1740px;width:969px;height:206px;z-index:46;overflow:hidden;">
-<div id="Carousel6" style="position:absolute;">
-<div class="frame">
-<div class="innerframe">
-<div id="wb_Image28" style="position:absolute;left:22px;top:24px;width:294px;height:161px;z-index:28;">
-<a href="https://youtu.be/3GPcVVpxAjo"><img src="images/hriday~1.png" id="Image28" alt=""></a></div>
-<div id="wb_Image16" style="position:absolute;left:336px;top:24px;width:297px;height:161px;z-index:29;">
-<a href="https://youtu.be/cFbpNN59BEg"><img src="images/keats japon~1.png" id="Image16" alt=""></a></div>
-<div id="wb_Image23" style="position:absolute;left:656px;top:24px;width:296px;height:161px;z-index:30;">
-<a href="https://youtu.be/ETz5TNaeS78"><img src="images/sudhir gautam~1.png" id="Image23" alt=""></a></div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_Text7" style="position:absolute;left:60px;top:1440px;width:566px;height:51px;z-index:47;">
-<span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>Audio-Drama/ Story Plays</strong></span></div>
+<div id="wb_Image27" style="position:absolute;left:665px;top:1234px;width:296px;height:164px;z-index:49;">
+<a href="https://www.youtube.com/playlist?list=PLbrjRQAzpHJB7dYUg0RDAMsXQWL77nKwR"><img src="images/english~1.png" id="Image27" alt=""></a></div>
+<div id="wb_Shape1" style="position:absolute;left:0px;top:2604px;width:970px;height:201px;z-index:50;">
+<img src="images/img0001.png" id="Shape1" alt="" style="width:970px;height:201px;"></div>
+<div id="wb_Text7" style="position:absolute;left:150px;top:2655px;width:670px;height:96px;text-align:center;z-index:51;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:27px;"><strong>Dristikon Online App 2.0<br>© Copyright 2020 Dristikon, Tarakeswar <br>Designed &amp; Developed by <a href="https://kaustavroy-lab.github.io/kaustavroyinfo/">Kaustav Roy</a></strong></span></div>
 </body>
 </html>

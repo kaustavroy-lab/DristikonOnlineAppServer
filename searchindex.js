@@ -13,6 +13,6 @@ function SearchPage(url, title, keywords, description)
 function SearchDatabase()
 {
    database_length = 0;
-   this[database_length++] = new SearchPage("index.html", "Untitled Page", "Short films  Popular Bengali Songs  Popular Videos  Audio-Drama/ Story Plays  Interviews  Audio-Drama/ Story Plays   ", "");
+   this[database_length++] = new SearchPage("index.html", "Untitled Page", "In Your Language  Interviews  Popular Bengali Songs  Short films  Popular Videos  Audio-Drama/ Story Plays  Dristikon Online App 2.0 © Copyright 2020 Dristikon, Tarakeswar  Designed & Developed by Kaustav Roy   ", "");
    return this;
 }
