@@ -13,6 +13,8 @@ function SearchPage(url, title, keywords, description)
 function SearchDatabase()
 {
    database_length = 0;
-   this[database_length++] = new SearchPage("index.html", "Untitled Page", "In Your Language  Interviews  Popular Bengali Songs  Short films  Popular Videos  Audio-Drama/ Story Plays  Dristikon Online App 2.0 © Copyright 2020 Dristikon, Tarakeswar  Designed & Developed by Kaustav Roy   ", "");
+   this[database_length++] = new SearchPage("index.html", "Untitled Page", "Dance  Popular Bengali Songs  Bengali Poems  Hindi Songs  English Songs  In Your Language  Interviews  Short films  Popular Videos  Audio-Drama/ Story Plays  Dristikon Online App 2.0 © Copyright 2020 Dristikon, Tarakeswar  Designed & Developed by Kaustav Roy   ", "");
+   this[database_length++] = new SearchPage("page1.html", "Untitled Page", " ", "");
+   this[database_length++] = new SearchPage("page2.html", "Untitled Page", " ", "");
    return this;
 }
