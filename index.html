@@ -43,7 +43,7 @@ $(document).ready(function()
    $("#Carousel3").carousel(Carousel3Opts);
    var Carousel2Opts =
    {
-      delay: 15000,
+      delay: 20000,
       duration: 400,
       easing: 'linear',
       mode: 'forward-circular',
@@ -178,7 +178,6 @@ $(document).ready(function()
 
   gtag('config', 'UA-153608767-1');
 </script>
-ogle Analytics code here -->
 </head>
 <body data-spy="scroll">
 <div id="wb_Carousel11" style="position:absolute;left:0px;top:3519px;width:969px;height:206px;z-index:59;overflow:hidden;">
@@ -476,6 +475,9 @@ ogle Analytics code here -->
    <li role="menuitem"><a href="https://www.mygov.in/covid-19/"><i class="fa fa-info-circle fa-fw"></i><span>COVID-19</span></a></li>
    <li role="menuitem"><a href="https://www.windy.com/?22.566,88.365,5"><i class="fa fa-sun-o fa-fw"></i><span>Weather Update</span></a></li>
 </ul>
+<div id="PanelMenu1-social">
+      <a href="facetime:" onclick="HidePanel('PanelMenu1', event);return false;"><i class="fa fa-times social-icon"></i></a>
+</div>
 </div>
 </div>
 <div id="wb_Image2" style="position:absolute;left:402px;top:59px;width:167px;height:167px;z-index:86;">
@@ -504,5 +506,29 @@ ogle Analytics code here -->
 <img src="images/img0001.png" id="Shape1" alt="" style="width:970px;height:201px;"></div>
 <div id="wb_Text7" style="position:absolute;left:150px;top:4131px;width:670px;height:96px;text-align:center;z-index:91;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:27px;"><strong>Dristikon Online App 2.1<br>© Copyright 2020 Dristikon, Tarakeswar <br>Designed &amp; Developed by </strong></span><span style="color:#0E171E;font-family:Arial;font-size:27px;"><strong><a href="https://kaustavroy-lab.github.io/kaustavroyinfo/">Kaustav Roy</a></strong></span></div>
+<div id="wb_JavaScript2" style="position:absolute;left:267px;top:26px;width:436px;height:36px;z-index:92;">
+<div id="greeting" style="font-family:Arial;font-size:28px;color:#FFFFFF;font-weight:bold;font-style:normal;text-align:center;text-decoration:none;"></div> 
+<script>
+var datenow = new Date(); 
+var timenow = datenow.getTime(); 
+datenow.setTime(timenow); 
+var hournow = datenow.getHours(); 
+var greeting = document.getElementById('greeting');
+if (hournow > 18)
+{ 
+   greeting.innerHTML = "Hey Dristikonian Good Evening!"; 
+}
+else 
+if (hournow > 12) 
+{
+   greeting.innerHTML = "Hey Dristikonian Good Afternoon!"; 
+}
+else 
+{
+   greeting.innerHTML = "Hey Dristikonian Good Morning!"; 
+}
+</script></div>
+<div id="wb_Image63" style="position:absolute;left:808px;top:83px;width:118px;height:118px;z-index:93;">
+<a href="https://kaustavroy-lab.github.io/NotificationDkon/"><img src="images/notification-bell-icon-png-3-transparent.png" id="Image63" alt=""></a></div>
 </body>
 </html>
