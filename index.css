@@ -1166,123 +1166,13 @@ body
    width: 100%;
    height: 100%;
 }
-#Layer1 .modal-content
+#Layer1
 {
-   background-color: #101010;
+   background-color: #FFFFFF;
    background-image: none;
    border: 1px solid transparent;
    border-radius: 6px;
    box-shadow: 0px 3px 9px rgba(0,0,0,0.50);
-   overflow: visible;
-}
-#Layer1.fade
-{
-   opacity: 0;
-   -webkit-transition: opacity .15s linear;
-   transition: opacity .15s linear;
-}
-#Layer1.fade.in
-{
-   opacity: 1;
-}
-#Layer1.modal
-{
-   position: fixed;
-   top: 0px;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
-   z-index: 1050;
-   display: none;
-   overflow: hidden;
-   -webkit-overflow-scrolling: touch;
-   outline: 0;
-}
-#Layer1 .modal-open .modal
-{
-   overflow-x: hidden;
-   overflow-y: auto;
-}
-#Layer1 .modal-open
-{
-   overflow: hidden;
-}
-#Layer1 .modal-dialog
-{
-   position: relative;
-   width: 970px;
-   margin: 30px auto;
-}
-#Layer1 .modal-content
-{
-   position: relative;
-   -webkit-background-clip: padding-box;
-   background-clip: padding-box;
-   outline: 0;
-}
-#Layer1 .modal-header
-{
-   min-height: 16px;
-   padding: 15px 15px 15px 15px;
-   border-bottom: 1px solid #CCCCCC;
-}
-#Layer1 .modal-footer
-{
-   padding: 15px 15px 15px 15px;
-   border-top: 1px solid #CCCCCC;
-}
-#Layer1 .modal-body
-{
-   position: relative;
-   width: 970px;
-   height: 1301px;
-}
-#Layer1 .close
-{
-   float: right;
-   font-size: 21px;
-   font-weight: 700;
-   line-height: 1;
-   color: #CCCCCC;
-   text-shadow: 0px 1px 0px #fff;
-   opacity: 0.5;
-   -webkit-appearance: none;
-   padding: 15px 15px 0px 0px;
-   cursor: pointer;
-   background: 0 0;
-   border: 0;
-   margin-top: -2px;
-}
-.modal-backdrop
-{
-   position: fixed;
-   top: 0px;
-   right: 0px;
-   bottom: 0px;
-   left: 0px;
-   z-index: 1040;
-   background-color: #000;
-}
-.modal-backdrop.fade
-{
-   opacity: 0;
-   -webkit-transition: opacity .15s linear;
-   transition: opacity .15s linear;
-}
-.modal-backdrop.in
-{
-   opacity: 0.5;
-}
-.modal-open
-{
-   overflow: hidden;
-}
-#Layer1 .modal-title
-{
-   color: #CCCCCC;
-   font-size: 16px;
-   font-weight: 500;
-   margin: 0;
 }
 #wb_Text15 
 {
@@ -1721,6 +1611,41 @@ body
    padding: 0;
    display: inline-block;
    width: 966px;
-   height: 1291px;
+   height: 1285px;
    vertical-align: top;
+}
+#wb_IconFont1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid transparent;
+   text-align: center;
+   margin: 0;
+   padding: 0;
+   line-height: 96px;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#wb_IconFont1:hover
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid transparent;
+}
+#IconFont1
+{
+   vertical-align: middle;
+}
+#IconFont1 g
+{
+   fill: #8B0000;
+   display: inline-block;
+   font-size: 96px;
+   vertical-align: middle;
+   width: 95px;
+}
+#wb_IconFont1:hover g
+{
+   fill: #00BFFF;
 }
