@@ -1,13 +1,13 @@
 div#container
 {
-   width: 1280px;
+   width: 970px;
    position: relative;
    margin: 0 auto 0 auto;
    text-align: left;
 }
 body
 {
-   background-color: #FFFFFF;
+   background-color: #000000;
    color: #000000;
    font-family: Arial;
    font-weight: normal;
