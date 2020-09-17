@@ -1,9 +1,21 @@
+html, body
+{
+   height: 100%;
+}
+div#space
+{
+   width: 1px;
+   height: 50%;
+   margin-bottom: -279px;
+   float:left
+}
 div#container
 {
-   width: 1280px;
+   width: 966px;
+   height: 558px;
+   margin: 0 auto;
    position: relative;
-   margin: 0 auto 0 auto;
-   text-align: left;
+   clear: left;
 }
 body
 {
@@ -14,7 +26,7 @@ body
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
-   text-align: center;
+   padding: 0;
 }
 a
 {
