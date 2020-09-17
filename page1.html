@@ -23,29 +23,6 @@ function onYouTubeIframeAPIReady() {
 <script>
 $(document).ready(function()
 {
-   function resizeYouTube() 
-   {
-      var ratio = 16/9;
-      var widthViewPort = $(window).width();
-      var heightViewPort = $(window).height();
-      var width, height;
-      var $player = $('#YouTube1');
-      if (widthViewPort / ratio < heightViewPort)
-      {
-         width = Math.ceil(heightViewPort * ratio);
-         $player.width(width).height(heightViewPort).css({left: (widthViewPort - width) / 2, top: 0});
-      }
-      else
-      {
-         height = Math.ceil(widthViewPort / ratio);
-         $player.width(widthViewPort).height(height).css({left: 0, top: (heightViewPort - height) / 2});
-      }
-   }
-   $(window).on('resize', function() 
-   {
-      resizeYouTube();
-   })
-   resizeYouTube();
    const plyrYouTube1 = new Plyr('#wb_YouTube1', {loadSprite: false, iconUrl: 'plyr.svg'});
 });
 </script>
@@ -56,11 +33,11 @@ $(document).ready(function()
 <iframe id="YouTube1" src="https://www.youtube.com/embed/_KHWWImVc6U?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;enablejsapi=1&amp;autohide=0"></iframe>
 </div>
 </div>
-<div id="Layer1" style="position:fixed;text-align:center;left:0;top:292px;right:0;width:1167px;height:136px;margin-left:auto;margin-right:auto;z-index:3;">
+<div id="Layer1" style="position:fixed;text-align:center;left:0;top:296px;right:0;width:1003px;height:129px;margin-left:auto;margin-right:auto;z-index:3;">
 <div id="Layer1-container" style="width:1280px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Text1" style="position:absolute;left:82px;top:21px;width:1003px;height:48px;z-index:0;">
+<div id="wb_Text1" style="position:absolute;left:0px;top:13px;width:1003px;height:48px;z-index:0;">
 <span style="color:#000000;font-family:Arial;font-size:43px;"><strong>Please </strong></span><span style="color:#800000;font-family:Arial;font-size:43px;"><strong>Rotate</strong></span><span style="color:#000000;font-family:Arial;font-size:43px;"><strong> Your Device For Better Experience</strong></span></div>
-<input type="button" id="Button1" onclick="ShowObject('Layer1', 0);return false;" name="" value="OK, I Understand" style="position:absolute;left:440px;top:78px;width:270px;height:46px;z-index:1;">
+<input type="button" id="Button1" onclick="ShowObject('Layer1', 0);return false;" name="" value="OK, I Understand" style="position:absolute;left:366px;top:72px;width:270px;height:46px;z-index:1;">
 </div>
 </div>
 </body>
