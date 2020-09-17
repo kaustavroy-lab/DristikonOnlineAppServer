@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
+<link href="plyr.css" rel="stylesheet">
+<link href="dristikon_online_app.css" rel="stylesheet">
+<link href="page1.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="plyr.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+var playerYouTube1;
+function onYouTubeIframeAPIReady() {
+   playerYouTube1 = new YT.Player('YouTube1', {
+      events: {
+      }
+   });
+}
+</script>
+<script src="wwb16.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   function resizeYouTube() 
+   {
+      var ratio = 16/9;
+      var widthViewPort = $(window).width();
+      var heightViewPort = $(window).height();
+      var width, height;
+      var $player = $('#YouTube1');
+      if (widthViewPort / ratio < heightViewPort)
+      {
+         width = Math.ceil(heightViewPort * ratio);
+         $player.width(width).height(heightViewPort).css({left: (widthViewPort - width) / 2, top: 0});
+      }
+      else
+      {
+         height = Math.ceil(widthViewPort / ratio);
+         $player.width(widthViewPort).height(height).css({left: 0, top: (heightViewPort - height) / 2});
+      }
+   }
+   $(window).on('resize', function() 
+   {
+      resizeYouTube();
+   })
+   resizeYouTube();
+   const plyrYouTube1 = new Plyr('#wb_YouTube1', {loadSprite: false, iconUrl: 'plyr.svg'});
+});
+</script>
+</head>
+<body>
+<div id="container">
+<div id="wb_YouTube1" style="position:absolute;left:0px;top:0px;width:1280px;height:720px;z-index:2;">
+<iframe id="YouTube1" src="https://www.youtube.com/embed/_KHWWImVc6U?rel=0&amp;modestbranding=1&amp;showinfo=0&amp;enablejsapi=1&amp;autohide=0"></iframe>
+</div>
+</div>
+<div id="Layer1" style="position:fixed;text-align:center;left:0;top:292px;right:0;width:1167px;height:136px;margin-left:auto;margin-right:auto;z-index:3;">
+<div id="Layer1-container" style="width:1280px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Text1" style="position:absolute;left:82px;top:21px;width:1003px;height:48px;z-index:0;">
+<span style="color:#000000;font-family:Arial;font-size:43px;"><strong>Please </strong></span><span style="color:#800000;font-family:Arial;font-size:43px;"><strong>Rotate</strong></span><span style="color:#000000;font-family:Arial;font-size:43px;"><strong> Your Device For Better Experience</strong></span></div>
+<input type="button" id="Button1" onclick="ShowObject('Layer1', 0);return false;" name="" value="OK, I Understand" style="position:absolute;left:440px;top:78px;width:270px;height:46px;z-index:1;">
+</div>
+</div>
+</body>
+</html>
