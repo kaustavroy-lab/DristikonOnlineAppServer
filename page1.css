@@ -6,13 +6,13 @@ div#space
 {
    width: 1px;
    height: 50%;
-   margin-bottom: -267px;
+   margin-bottom: -187px;
    float:left
 }
 div#container
 {
-   width: 966px;
-   height: 534px;
+   width: 667px;
+   height: 375px;
    margin: 0 auto;
    position: relative;
    clear: left;
@@ -49,6 +49,15 @@ a:hover
 input:focus, textarea:focus, select:focus
 {
    outline: none;
+}
+#preloader
+{
+   background: #FFFFFF url("images/cube.gif") no-repeat center center;
+   bottom: 0;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 99999;
 }
 #wb_Text1 
 {
