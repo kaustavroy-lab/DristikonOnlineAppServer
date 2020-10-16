@@ -36,6 +36,31 @@ $(window).on('load', function()
 <iframe id="YouTube1" src="https://www.youtube.com/embed/_KHWWImVc6U?rel=0&amp;autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;enablejsapi=1&amp;autohide=0"></iframe>
 </div>
 </div>
+<div style="z-index:2">
+<script>
+var disabled_message = "Not Available";
+document.oncontextmenu = function() 
+{ 
+   return false; 
+}
+document.onmousedown = function md(e) 
+{ 
+  try 
+  { 
+     if (event.button==2||event.button==3) 
+     {
+        if (disabled_message != '')
+           alert(disabled_message);
+        return false; 
+     }
+  }  
+  catch (e) 
+  { 
+     if (e.which == 3) return false; 
+  } 
+}
+</script>
+</div>
 <div id="preloader"></div>
 </body>
 </html>
