@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="default/jquery.mobile.theme-1.4.5.css" rel="stylesheet">
+<link href="default/jquery.mobile.icons-1.4.5.min.css" rel="stylesheet">
+<link href="jquery.mobile.structure-1.4.5.min.css" rel="stylesheet">
+<link href="dristikon_online_app_mobile.css" rel="stylesheet">
+<link href="Music.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+$(document).on("mobileinit", function()
+{
+   $.mobile.ajaxEnabled = false;
+});
+</script>
+<script src="jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page" data-theme="x" data-title="Untitled Page" id="Music">
+<div class="ui-content" role="main">
+<div id="LayoutGrid2" class="LayoutGrid2-grid-solo LayoutGrid2-responsive">
+<div class="LayoutGrid2-block-a">
+<div id="wb_JavaScript1">
+<div style="color:#800000;font-size:16px;font-family:Verdana;font-weight:bold;font-style:normal;text-align:center;text-decoration:none" id="basicclock"></div>
+<script>
+function clock() 
+{
+   var digital = new Date();
+   var hours = digital.getHours();
+   var minutes = digital.getMinutes();
+   var seconds = digital.getSeconds();
+   if (minutes <= 9) minutes = "0" + minutes;
+   if (seconds <= 9) seconds = "0" + seconds;
+   dispTime = hours + ":" + minutes + ":" + seconds;
+
+   var basicclock = document.getElementById('basicclock');
+   basicclock.innerHTML = dispTime;
+   setTimeout("clock()", 1000);
+}
+clock();
+</script>
+
+</div>
+</div>
+</div>
+<div id="Layer1" style="display:inline-block;position:relative;text-align:center;width:68px;height:70px;z-index:7;">
+<div id="Layer1-container" style="width:100%">
+<img src="images/circle dristikon.png" id="Image5" alt="">
+</div>
+</div>
+<div id="wb_Text1">
+<span style="background-color:#FF0000;color:#FFFFFF;font-family:'Times New Roman';font-size:21px;letter-spacing:2.07px;"><strong>Stream Your Music Online</strong></span>
+</div>
+<div id="LayoutGrid1" class="LayoutGrid1-grid-a LayoutGrid1-responsive">
+<div class="LayoutGrid1-block-a">
+<div id="wb_Image1">
+<a href="https://www.jiosaavn.com/"><img src="images/170_24691553310328.jpg" id="Image1" alt=""></a></div>
+</div>
+<div class="LayoutGrid1-block-b">
+<div id="wb_Image2">
+<a href="https://wynk.in/music"><img src="images/WYNK-MUSIC-04-12-19.jpg" id="Image2" alt=""></a></div>
+</div>
+<div class="LayoutGrid1-block-a">
+<div id="wb_Image3">
+<a href="https://music.youtube.com/"><img src="images/YouTube_Music_3.jpg" id="Image3" alt=""></a></div>
+</div>
+<div class="LayoutGrid1-block-b">
+<div id="wb_Image4">
+<a href="https://gaana.com/"><img src="images/RJYSdFQyoV4YsokhhNoj39.jpg" id="Image4" alt=""></a></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
