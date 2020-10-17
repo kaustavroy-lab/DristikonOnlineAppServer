@@ -6,16 +6,6 @@
 <link href="dristikon_online_app.css" rel="stylesheet">
 <link href="page1.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
-<script>
-var playerYouTube1;
-function onYouTubeIframeAPIReady() {
-   playerYouTube1 = new YT.Player('YouTube1', {
-      events: {
-      }
-   });
-}
-</script>
 <script>
 $(document).ready(function()
 {
@@ -32,34 +22,8 @@ $(window).on('load', function()
 <div id="container">
 <div id="Html1" style="position:absolute;left:0px;top:0px;width:1109px;height:552px;z-index:0">
 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/G7gZuSjZi_A?rel=0&modestbranding=1&autohide=1&showinfo=0" frameborder="0" allow="autoplay; clipboard-red" allowfullscreen></iframe></div>
-<div id="wb_YouTube1" style="position:absolute;left:0px;top:0px;width:970px;height:545px;visibility:hidden;z-index:1;">
-<iframe id="YouTube1" src="https://www.youtube.com/embed/_KHWWImVc6U?rel=0&amp;autoplay=1&amp;modestbranding=1&amp;showinfo=0&amp;enablejsapi=1&amp;autohide=0"></iframe>
-</div>
-</div>
-<div style="z-index:2">
-<script>
-var disabled_message = "Not Available";
-document.oncontextmenu = function() 
-{ 
-   return false; 
-}
-document.onmousedown = function md(e) 
-{ 
-  try 
-  { 
-     if (event.button==2||event.button==3) 
-     {
-        if (disabled_message != '')
-           alert(disabled_message);
-        return false; 
-     }
-  }  
-  catch (e) 
-  { 
-     if (e.which == 3) return false; 
-  } 
-}
-</script>
+<div id="wb_Shape1" style="position:absolute;left:0px;top:0px;width:1109px;height:67px;z-index:1;">
+<img src="images/img0002.png" id="Shape1" alt="" style="width:1109px;height:67px;"></div>
 </div>
 <div id="preloader"></div>
 </body>
