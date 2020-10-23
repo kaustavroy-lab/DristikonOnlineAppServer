@@ -18,6 +18,7 @@
 <script src="affix.min.js"></script>
 <script src="skrollr.min.js"></script>
 <script src="jquery-ui.min.js"></script>
+<script src="wb.stickylayer.min.js"></script>
 <script src="wwb16.min.js"></script>
 <script>
 $(document).ready(function()
@@ -192,6 +193,12 @@ $(document).ready(function()
       skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
    }
    skrollrInit();
+   $("#Layer2").stickylayer({orientation: 6, position: [0, 0], delay: 500});
+   $("a[href*='#Layer2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#Layer2').offset().top }, 600, 'linear');
+   });
 });
 </script>
 <!-- Insert Go<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -205,11 +212,11 @@ $(document).ready(function()
 </script>
 </head>
 <body data-spy="scroll">
-<div id="wb_Image67" style="position:absolute;left:0px;top:954px;width:970px;height:313px;z-index:75;">
+<div id="wb_Image67" style="position:absolute;left:0px;top:954px;width:970px;height:313px;z-index:76;">
 <a href="./page1.html"><img src="images/amio durga appp.png" id="Image67" alt=""></a></div>
-<div id="wb_Text18" style="position:absolute;left:51px;top:899px;width:468px;height:48px;z-index:76;">
+<div id="wb_Text18" style="position:absolute;left:51px;top:899px;width:468px;height:48px;z-index:77;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;letter-spacing:1.07px;"><strong>Only App Access</strong></span></div>
-<div id="wb_Carousel9" style="position:absolute;left:0px;top:4381px;width:969px;height:262px;z-index:77;overflow:hidden;">
+<div id="wb_Carousel9" style="position:absolute;left:0px;top:4381px;width:969px;height:262px;z-index:78;overflow:hidden;">
 <div id="Carousel9" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -229,7 +236,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Carousel8" style="position:absolute;left:0px;top:4042px;width:969px;height:262px;z-index:78;overflow:hidden;">
+<div id="wb_Carousel8" style="position:absolute;left:0px;top:4042px;width:969px;height:262px;z-index:79;overflow:hidden;">
 <div id="Carousel8" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -247,7 +254,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Carousel11" style="position:absolute;left:0px;top:5070px;width:969px;height:262px;z-index:79;overflow:hidden;">
+<div id="wb_Carousel11" style="position:absolute;left:0px;top:5070px;width:969px;height:262px;z-index:80;overflow:hidden;">
 <div id="Carousel11" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -259,9 +266,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text13" style="position:absolute;left:60px;top:5014px;width:639px;height:48px;z-index:80;">
+<div id="wb_Text13" style="position:absolute;left:60px;top:5014px;width:639px;height:48px;z-index:81;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>Cooking</strong></span></div>
-<div id="wb_Carousel10" style="position:absolute;left:0px;top:4728px;width:969px;height:262px;z-index:81;overflow:hidden;">
+<div id="wb_Carousel10" style="position:absolute;left:0px;top:4728px;width:969px;height:262px;z-index:82;overflow:hidden;">
 <div id="Carousel10" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -281,15 +288,15 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text12" style="position:absolute;left:60px;top:4672px;width:639px;height:61px;z-index:82;">
+<div id="wb_Text12" style="position:absolute;left:60px;top:4672px;width:639px;height:61px;z-index:83;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>Drawing</strong></span></div>
-<div id="wb_Text11" style="position:absolute;left:59px;top:4330px;width:639px;height:61px;z-index:83;">
+<div id="wb_Text11" style="position:absolute;left:59px;top:4330px;width:639px;height:61px;z-index:84;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>Dance</strong></span></div>
-<div id="wb_Text10" style="position:absolute;left:60px;top:3985px;width:639px;height:61px;z-index:84;">
+<div id="wb_Text10" style="position:absolute;left:60px;top:3985px;width:639px;height:61px;z-index:85;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>English Songs</strong></span></div>
-<div id="wb_Text9" style="position:absolute;left:60px;top:3629px;width:639px;height:61px;z-index:85;">
+<div id="wb_Text9" style="position:absolute;left:60px;top:3629px;width:639px;height:61px;z-index:86;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>Hindi Songs</strong></span></div>
-<div id="wb_Carousel7" style="position:absolute;left:0px;top:3686px;width:969px;height:262px;z-index:86;overflow:hidden;">
+<div id="wb_Carousel7" style="position:absolute;left:0px;top:3686px;width:969px;height:262px;z-index:87;overflow:hidden;">
 <div id="Carousel7" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -323,7 +330,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Carousel5" style="position:absolute;left:0px;top:3343px;width:969px;height:262px;z-index:87;overflow:hidden;">
+<div id="wb_Carousel5" style="position:absolute;left:0px;top:3343px;width:969px;height:262px;z-index:88;overflow:hidden;">
 <div id="Carousel5" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -367,9 +374,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text8" style="position:absolute;left:59px;top:3289px;width:639px;height:48px;z-index:88;">
+<div id="wb_Text8" style="position:absolute;left:59px;top:3289px;width:639px;height:48px;z-index:89;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>Bengali Poems</strong></span></div>
-<div id="wb_Carousel6" style="position:absolute;left:0px;top:2998px;width:969px;height:262px;z-index:89;overflow:hidden;">
+<div id="wb_Carousel6" style="position:absolute;left:0px;top:2998px;width:969px;height:262px;z-index:90;overflow:hidden;">
 <div id="Carousel6" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -403,9 +410,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text3" style="position:absolute;left:59px;top:2940px;width:639px;height:61px;z-index:90;">
+<div id="wb_Text3" style="position:absolute;left:59px;top:2940px;width:639px;height:61px;z-index:91;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>Popular Bengali Songs</strong></span></div>
-<div id="wb_Carousel4" style="position:absolute;left:0px;top:2642px;width:969px;height:262px;z-index:91;overflow:hidden;">
+<div id="wb_Carousel4" style="position:absolute;left:0px;top:2642px;width:969px;height:262px;z-index:92;overflow:hidden;">
 <div id="Carousel4" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -423,9 +430,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text5" style="position:absolute;left:60px;top:2581px;width:566px;height:61px;z-index:92;">
+<div id="wb_Text5" style="position:absolute;left:60px;top:2581px;width:566px;height:61px;z-index:93;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;line-height:49px;"><strong>Interviews</strong></span></div>
-<div id="wb_Carousel2" style="position:absolute;left:0px;top:2301px;width:969px;height:262px;z-index:93;overflow:hidden;">
+<div id="wb_Carousel2" style="position:absolute;left:0px;top:2301px;width:969px;height:262px;z-index:94;overflow:hidden;">
 <div id="Carousel2" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -443,9 +450,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text4" style="position:absolute;left:59px;top:2240px;width:597px;height:48px;z-index:94;">
+<div id="wb_Text4" style="position:absolute;left:59px;top:2240px;width:597px;height:48px;z-index:95;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>Audio-Drama/ Story Plays</strong></span></div>
-<div id="wb_Carousel13" style="position:absolute;left:0px;top:1952px;width:969px;height:262px;z-index:95;overflow:hidden;">
+<div id="wb_Carousel13" style="position:absolute;left:0px;top:1952px;width:969px;height:262px;z-index:96;overflow:hidden;">
 <div id="Carousel13" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -471,17 +478,17 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text2" style="position:absolute;left:60px;top:1897px;width:468px;height:48px;z-index:96;">
+<div id="wb_Text2" style="position:absolute;left:60px;top:1897px;width:468px;height:48px;z-index:97;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>Short films</strong></span></div>
-<div id="wb_Image27" style="position:absolute;left:655px;top:1688px;width:312px;height:176px;z-index:97;">
+<div id="wb_Image27" style="position:absolute;left:655px;top:1688px;width:312px;height:176px;z-index:98;">
 <a href="https://www.youtube.com/playlist?list=PLbrjRQAzpHJB7dYUg0RDAMsXQWL77nKwR"><img src="images/english~1.png" id="Image27" alt=""></a></div>
-<div id="wb_Image29" style="position:absolute;left:333px;top:1688px;width:312px;height:175px;z-index:98;">
+<div id="wb_Image29" style="position:absolute;left:333px;top:1688px;width:312px;height:175px;z-index:99;">
 <a href="https://www.youtube.com/playlist?list=PLbrjRQAzpHJAFSyzIfjOtbPS1L3pXGXCV"><img src="images/hindi.png" id="Image29" alt=""></a></div>
-<div id="wb_Image1" style="position:absolute;left:11px;top:1688px;width:312px;height:175px;z-index:99;">
+<div id="wb_Image1" style="position:absolute;left:11px;top:1688px;width:312px;height:175px;z-index:100;">
 <a href="https://www.youtube.com/playlist?list=PLbrjRQAzpHJCKBgMhOlZDSBg1x1OqwMOe"><img src="images/bangla~1.png" id="Image1" alt=""></a></div>
-<div id="wb_Text6" style="position:absolute;left:60px;top:1631px;width:468px;height:48px;z-index:100;">
+<div id="wb_Text6" style="position:absolute;left:60px;top:1631px;width:468px;height:48px;z-index:101;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;letter-spacing:1.07px;"><strong>In Your Language</strong></span></div>
-<div id="wb_Carousel3" style="position:absolute;left:0px;top:1343px;width:969px;height:262px;z-index:101;overflow:hidden;">
+<div id="wb_Carousel3" style="position:absolute;left:0px;top:1343px;width:969px;height:262px;z-index:102;overflow:hidden;">
 <div id="Carousel3" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -533,9 +540,9 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_Text1" style="position:absolute;left:59px;top:1292px;width:468px;height:48px;z-index:102;">
+<div id="wb_Text1" style="position:absolute;left:59px;top:1292px;width:468px;height:48px;z-index:103;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:43px;letter-spacing:1.07px;"><strong>Popular Videos </strong></span></div>
-<div id="wb_JavaScript2" style="position:absolute;left:170px;top:23px;width:629px;height:36px;z-index:103;">
+<div id="wb_JavaScript2" style="position:absolute;left:170px;top:23px;width:629px;height:36px;z-index:104;">
 <div id="greeting" style="font-family:Arial;font-size:29px;color:#FFFFFF;font-weight:bold;font-style:normal;text-align:center;text-decoration:none;"></div> 
 <script>
 var datenow = new Date(); 
@@ -557,7 +564,7 @@ else
    greeting.innerHTML = "Hey Dristikonian Good Morning!"; 
 }
 </script></div>
-<div id="wb_Carousel1" style="position:absolute;left:0px;top:339px;width:970px;height:520px;z-index:104;overflow:hidden;">
+<div id="wb_Carousel1" style="position:absolute;left:0px;top:339px;width:970px;height:520px;z-index:105;overflow:hidden;">
 <div id="Carousel1" style="position:absolute;">
 <div class="frame">
 <div class="carousel-innerframe">
@@ -615,7 +622,7 @@ else
 </div>
 </div>
 </div>
-<div id="wb_PanelMenu1" style="position:absolute;left:690px;top:181px;width:83px;height:59px;visibility:hidden;text-align:center;z-index:105;">
+<div id="wb_PanelMenu1" style="position:absolute;left:690px;top:181px;width:83px;height:59px;visibility:hidden;text-align:center;z-index:106;">
 <a href="#PanelMenu1_markup" id="PanelMenu1">&nbsp;</a>
 <div id="PanelMenu1_markup">
 <ul role="menu" class="nav">
@@ -632,15 +639,15 @@ else
 </div>
 </div>
 </div>
-<div id="wb_Image2" style="position:absolute;left:402px;top:59px;width:167px;height:167px;z-index:106;">
+<div id="wb_Image2" style="position:absolute;left:402px;top:59px;width:167px;height:167px;z-index:107;">
 <img src="images/circle dristikon water mark white 1.png" id="Image2" alt=""></div>
-<div id="wb_CssMenu2" style="position:absolute;left:0px;top:275px;width:101px;height:36px;z-index:107;">
+<div id="wb_CssMenu2" style="position:absolute;left:0px;top:275px;width:101px;height:36px;z-index:108;">
 <ul id="CssMenu2" role="menubar" class="nav">
 <li class="nav-item firstmain"><a role="menuitem" class="nav-link" href="javascript:window.location.reload()" target="_self" title="=" onclick="ShowPanel('PanelMenu1', event);return false;">=</a>
 </li>
 </ul>
 </div>
-<div id="wb_CssMenu1" style="position:absolute;left:101px;top:275px;width:860px;height:58px;z-index:108;">
+<div id="wb_CssMenu1" style="position:absolute;left:101px;top:275px;width:860px;height:58px;z-index:109;">
 <ul id="CssMenu1" role="menubar" class="nav">
 <li class="nav-item firstmain"><a role="menuitem" class="nav-link" href="javascript:window.location.reload()" target="_self" title="Home">Home</a>
 </li>
@@ -652,13 +659,13 @@ else
 </li>
 </ul>
 </div>
-<div id="wb_Shape1" style="position:absolute;left:0px;top:5375px;width:970px;height:201px;z-index:109;">
+<div id="wb_Shape1" style="position:absolute;left:0px;top:5375px;width:970px;height:201px;z-index:110;">
 <img src="images/img0001.png" id="Shape1" alt="" style="width:970px;height:201px;"></div>
-<div id="wb_Image63" style="position:absolute;left:808px;top:83px;width:118px;height:118px;visibility:hidden;z-index:110;">
+<div id="wb_Image63" style="position:absolute;left:808px;top:83px;width:118px;height:118px;visibility:hidden;z-index:111;">
 <a href="https://kaustavroy-lab.github.io/NotificationDkon/"><img src="images/notification-bell-icon-png-3-transparent.png" id="Image63" alt=""></a></div>
-<div id="wb_Text14" style="position:absolute;left:881px;top:108px;width:30px;height:34px;visibility:hidden;z-index:111;">
+<div id="wb_Text14" style="position:absolute;left:881px;top:108px;width:30px;height:34px;visibility:hidden;z-index:112;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:29px;"><strong><a href="https://kaustavroy-lab.github.io/NotificationDkon/">1</a></strong></span></div>
-<div id="Layer1" style="position:fixed;text-align:center;visibility:hidden;left:0;top:102px;right:0;width:968px;height:1390px;margin-left:auto;margin-right:auto;z-index:112;" data-bottom="all:#FFFFFF;">
+<div id="Layer1" style="position:fixed;text-align:center;visibility:hidden;left:0;top:102px;right:0;width:968px;height:1390px;margin-left:auto;margin-right:auto;z-index:113;" data-bottom="all:#FFFFFF;">
 <div id="wb_Text17">
 <span style="color:#FFFFFF;font-family:Arial;font-size:48px;">Coming Soon....</span>
 </div>
@@ -679,7 +686,13 @@ else
 </a>
 </div>
 </div>
-<div id="wb_Text7" style="position:absolute;left:150px;top:5419px;width:670px;height:89px;text-align:center;z-index:113;">
+<div id="wb_Text7" style="position:absolute;left:150px;top:5419px;width:670px;height:89px;text-align:center;z-index:114;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:27px;"><strong>Dristikon Online App </strong></span><span style="color:#DC143C;font-family:Arial;font-size:27px;"><strong><a href="https://kaustavroy-lab.github.io/developerstudiodkon/">2.8</a></strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:27px;"><strong><br>© Copyright 2020 Dristikon, Tarakeswar <br>Designed &amp; Developed by </strong></span><span style="color:#0E171E;font-family:Arial;font-size:27px;"><strong><a href="https://kaustavroy-lab.github.io/kaustavroyinfo/">Kaustav Roy</a></strong></span></div>
+<div id="Layer2" style="position:absolute;text-align:center;left:626px;top:80px;width:164px;height:146px;z-index:115;" onclick="window.location.href='#';return false;">
+<div id="Layer2-container" style="width:164px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Image71" style="position:absolute;left:17px;top:0px;width:147px;height:146px;z-index:75;">
+<a href="https://dristikononline.in/pujo2020"><img src="images/Artboard 2.jpg" id="Image71" alt=""></a></div>
+</div>
+</div>
 </body>
 </html>
